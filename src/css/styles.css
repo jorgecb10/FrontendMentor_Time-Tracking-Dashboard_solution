@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-rubik: 'Rubik', 'sans-serif';
+
+    --color-blue-hsl: hsl(246, 80%, 60%);
+    --color-light-red: hsl(15, 100%, 70%);
+    --color-soft-blue: hsl(195, 74%, 62%);
+    --color-light-red-study: hsl(348, 100%, 68%);
+    --color-green-lime: hsl(145, 58%, 55%);
+    --color-violet-social: hsl(264, 64%, 52%);
+    --color-soft-orange: hsl(43, 84%, 65%);
+    --color-very-dark-blue: hsl(226, 43%, 10%);
+    --color-dark-blue: hsl(235, 46%, 20%);
+    --color-dark-blue2: hsl(236, 41%, 34%);
+    --color-desaturated-blue: hsl(235, 45%, 61%);
+    --color-pale-blue: hsl(236, 100%, 87%);
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.image-autor {
+    width: 65px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+@media (min-width: 1024px) {
+    .image-autor {
+        width: 70px;
+    }
+}
+.active {
+    color: white;
+}
+.imagen-puntos:hover {
+    filter: brightness(50);
+}

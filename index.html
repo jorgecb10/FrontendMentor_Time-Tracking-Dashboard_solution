@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-rubik text-lg bg-very-dark-blue flex flex-col justify-center items-center min-h-dvh py-12">
+  <main class="contenedor">
+    <div class="flex flex-col gap-5 lg:grid lg:grid-cols-4">
+      <div class="row-span-2 rounded-lg bg-dark-blue flex flex-col">
+        <div class="bg-blue-hsl rounded-lg px-5 py-7 basis-2/3 flex items-center gap-4 lg:flex-col lg:items-start lg:gap-7">
+          <img src="src/images/image-jeremy.png" alt="image-jeremy" class="image-autor">
+
+          <div>
+            <p class="text-sm text-pale-blue">Report for</p>
+            <p class="text-white text-2xl lg:text-4xl">Jeremy Robson</p>
+          </div>
+        </div>
+        
+        <div class="p-5 basis-1/3 flex justify-between text-desaturated-blue lg:flex-col">
+          <a class="opcion cursor-pointer hover:text-white transition-colors duration-200">Daily</a>
+          <a class="opcion active cursor-pointer hover:text-white transition-colors duration-200">Weekly</a>
+          <a class="opcion cursor-pointer hover:text-white transition-colors duration-200">Monthly</a>
+        </div>
+      </div>
+
+      <div class="bg-light-red rounded-lg flex flex-col justify-between items-end">
+        <img src="src/images/icon-work.svg" alt="icon-work">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-25px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Work</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">32hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-lg bg-soft-blue flex flex-col justify-between items-end">
+        <img src="src/images/icon-play.svg" alt="icon-play" class="mr-3">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-25px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Play</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">10hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light-red-study rounded-lg flex flex-col justify-between items-end">
+        <img src="src/images/icon-study.svg" alt="icon-study" class="icono">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-25px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Study</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">4hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-green-lime rounded-lg flex flex-col justify-between items-end">
+        <img src="src/images/icon-exercise.svg" alt="icon-exercise" class="icono-exercise">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-6px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Exercise</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">4hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-violet-social rounded-lg flex flex-col justify-between items-end">
+        <img src="src/images/icon-social.svg" alt="icon-social" class="icono">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-50px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Social</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">5hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-soft-orange rounded-lg flex flex-col justify-between items-end">
+        <img src="src/images/icon-self-care.svg" alt="icon-self-care" class="icono">
+
+        <div class="tarjeta bg-dark-blue hover:bg-dark-blue2 transition-colors duration-200 cursor-pointer p-5 rounded-lg relative z-50 w-full mt-[-15px]">
+          <div class="flex items-center justify-between">
+            <p class="titulo text-white">Self Care</p>
+            <img src="src/images/icon-ellipsis.svg" alt="icon-ellipsis" class="imagen-puntos">
+          </div>
+        
+          <div class="flex items-center justify-between lg:flex-col lg:items-start lg:justify-start mt-2 lg:mt-0">
+            <p class="hrasActuales text-white text-5xl md:mt-4 md:mb-2">2hrs</p>
+            <p class="hrasPrevias text-pale-blue">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="contenedor lg:absolute lg:bottom-4">
+    <div class="attribution text-white text-center mt-5 lg:mt-0">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-soft-blue">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jorgecb10" class="text-light-red-study">Jorge Carranza</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
